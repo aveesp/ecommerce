@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form Validation</title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+        <div class="container">
+            <div class="logoCnt">
+                The <span class="middleTxt">e-commerce</span> Group
+            </div>
+        </div>
+    </header>
+    <div class="formCnt">
+      <div class="container">
+        <form name="registrationForm" onSubmit="return formValidation(event);">
+          <div class="row">
+            <h1 class="col-sm-12">Form Validation</h1>
+            <div class="col-sm-6 form-group">
+                <label class="control-label" for="name">Name:</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="John" value="">
+                <p id="nameErr" class="text-danger"></p>
+            </div> 
+            <div class="col-sm-6 form-group">
+                <label class="control-label" for="surname">Surname:</label>
+                <input type="text" class="form-control" id="surname" name="surname" placeholder="Doe" value="">
+                <p id="surnameErr" class="text-danger"></p>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-6 form-group">
+                <label class="control-label" for="email">Email:</label>
+                <input type="text" class="form-control" id="email" name="email" placeholder="johnDoe@xyz.com" value="">
+                <p id="emailErr" class="text-danger"></p>
+            </div>
+            <div class="col-sm-6 form-group">
+                <label class="control-label" for="phone">Phone:</label>
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="+xx xxxx xxxx" value="">
+                <p id="phoneErr" class="text-danger"></p>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-6 form-group">
+              <label class="control-label" for="password">Password:</label>
+              <input type="password" class="form-control" id="password" name="password" value="">
+              <p id="passwordErr" class="text-danger"></p>
+            </div>
+            <div class="col-sm-6 form-group">
+              <input type="submit" class="btn btn-success btn-md submit" name="submit" value="Submit">
+            </div>
+            <div class="clearfix"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="push"></div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 hidden-xs">
+            <ul class="list-unstyled footerList">
+                <li class="footerHeading">E-comm Group</li>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Our Stores</a></li>
+              <li><a href="#">Site Map</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 hidden-xs">
+            <ul class="list-unstyled footerList">
+              <li class="footerHeading">E-comm Group</li>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Our Stores</a></li>
+              <li><a href="#">Site Map</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+              <ul class="list-unstyled footerList">
+              <li class="footerHeading">Join with Us</li>
+              <li class="socialIcons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-google-plus"></i></a><a href="#"><i class="fa fa-instagram"></i></a><a href="#"><i class="fa fa-pinterest"></i></a><a href="#"><i class="fa fa-youtube"></i></a></li>
+              <li><a href="#">Privacy Policy</a>&nbsp;&nbsp;|<a href="#"> Terms &amp; Condition</a></li>
+              <li><a href="#">© 2018 The E-comm Group. All Rights Reserved.</a></li>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/form.js"></script>
+</body>
+</html>
